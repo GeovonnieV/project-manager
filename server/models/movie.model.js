@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const MoviesSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: true,
-        minlength: 3,
+        required: [true, "You must have a title"],
+        minlength: [3, "Your title must be atleast 3 characters"],
     },
     releaseDate: {
         type: Date,
