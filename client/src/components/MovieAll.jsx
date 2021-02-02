@@ -18,6 +18,10 @@ const MovieAll = () => {
     return(
         <div>
             <h2>Our Movie List</h2>
+             {/* btn directs to MovieAdd component */}
+             <Link to="/movies/new" >
+                   <button>Add Movie</button>     
+             </Link>
             {/* makes a p for all movies with a router */}
             {
                 allMovies.map((movie,index) => (
