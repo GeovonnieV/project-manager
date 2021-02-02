@@ -11,6 +11,7 @@ const MovieNew = () => {
     const [runtime, setRuntime] = useState("");
     const [errs, setErrs] = useState({});
 
+    // function ran when form is submitted
      const submitForm = (e) => {
          e.preventDefault();
 

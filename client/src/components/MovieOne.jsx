@@ -8,6 +8,7 @@ const MovieOne = (props) => {
     // axios is using route we made in server
     useEffect(() => {
         // props.id 
+        // id is what the route var is called to be passed in as a prop
         axios.get("http://localhost:8000/api/movies/" + props.id)
             // res holds all the movies that are in the db
             // dont forget have to put res.data holds the data
